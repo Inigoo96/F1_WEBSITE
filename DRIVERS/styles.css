@@ -1,0 +1,1273 @@
+/* Eliminar márgenes y rellenos globales */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;  /* Asegura que ocupe todo el ancho disponible */
+    box-sizing: border-box; /* Aplica box-sizing globalmente */
+    background-color: #ffffff; /* Fondo blanco para el cuerpo de la página */
+}
+
+/* Asegurarse de que todos los elementos usen border-box */
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+/* Estilo general para todas las secciones */
+section {
+    padding: 20px;  /* Espacio interior común */
+}
+
+/* Logo de la FIA en la esquina superior izquierda */
+.fia-logo {
+    position: absolute;
+    top: 6px; /* Baja el logo 20px desde la parte superior */
+    left: 0; /* Mantiene el logo en el borde izquierdo */
+    z-index: 1000;
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Barra superior con enlaces y categorías alineados */
+.top-links {
+    background-color: white;
+    padding: 4px 20px; /* Reduce el padding superior e inferior */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Categorías a la izquierda en la barra */
+.fia-categories {
+    display: flex;
+    gap: 20px;
+    margin-left: 50px;
+}
+
+.fia-categories a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.4s, transform 0.4s;
+}
+
+.fia-categories a:hover {
+    color: #242323;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* Barra superior con enlaces y categorías alineados */
+.top-links {
+    background-color: white;
+    padding: 8px 20px; /* Añade espacio para los márgenes */
+    display: flex;
+    justify-content: space-between; /* Alinea categorías a la izquierda y enlaces a la derecha */
+    align-items: center;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Contenedor de imágenes alineadas a la derecha */
+.top-links nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 10px; /* Espacio entre los enlaces */
+}
+
+.top-links nav ul li {
+    margin: 0 11px;
+}
+
+.top-links a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.4s, transform 0.4s;
+}
+
+.top-links a:hover {
+    color: #242323;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
+}
+
+/* Estilos para el botón LOGIN */
+button.login {
+    padding: 10px 20px;  /* Reducir el padding para hacer el botón más pequeño */
+    border-radius: 30px;  /* Ajuste del border-radius para hacer el botón más compacto */
+    cursor: pointer;
+    border: 2px solid black; /* Borde negro para LOGIN */
+    background-color: black; /* Fondo negro para LOGIN */
+    color: white; /* Texto blanco para LOGIN */
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1px;  /* Reducir el letter-spacing para que el texto sea más compacto */
+    text-transform: uppercase; /* Asegura que el texto sea en mayúsculas */
+    font-size: 12px;  /* Reducir el tamaño de la fuente */
+    transition: all 0.5s ease;
+}
+
+/* Estilo para el botón LOGIN cuando se hace hover */
+button.login:hover {
+    letter-spacing: 2px;
+    background-color: #333; /* Fondo gris oscuro cuando se hace hover */
+    color: white; /* Texto blanco cuando se hace hover */
+    box-shadow: rgb(131, 129, 129) 0px 7px 29px 0px;
+}
+
+/* Estilo para el botón LOGIN cuando se hace clic (active) */
+button.login:active {
+    letter-spacing: 2px;
+    background-color: #333; /* Fondo gris oscuro cuando se hace clic */
+    color: white; /* Texto blanco cuando se hace clic */
+    box-shadow: rgb(131, 129, 129) 0px 7px 29px 0px;
+    transform: translateY(5px);  /* Reducir la transformación de clic */
+    transition: 100ms;
+}
+
+
+
+/* Estilos para el botón SUBSCRIBE */
+button.subscribe {
+    padding: 10px 20px;  /* Reducir el padding para hacer el botón más pequeño */
+    border-radius: 30px;  /* Ajuste del border-radius para hacer el botón más compacto */
+    cursor: pointer;
+    border: 2px solid red; /* Borde rojo para SUBSCRIBE */
+    background-color: red; /* Fondo rojo para SUBSCRIBE */
+    color: white; /* Texto blanco para SUBSCRIBE */
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1px;  /* Reducir el letter-spacing para que el texto sea más compacto */
+    text-transform: uppercase; /* Asegura que el texto sea en mayúsculas */
+    font-size: 12px;  /* Reducir el tamaño de la fuente */
+    transition: all 0.5s ease;
+}
+
+/* Estilo para el botón SUBSCRIBE cuando se hace hover */
+button.subscribe:hover {
+    letter-spacing: 2px;
+    background-color: white; /* Fondo blanco cuando se hace hover */
+    color: black; /* Texto negro cuando se hace hover */
+    box-shadow: rgb(221, 86, 86) 0px 7px 29px 0px;
+}
+
+/* Estilo para el botón SUBSCRIBE cuando se hace clic (active) */
+button.subscribe:active {
+    letter-spacing: 2px;
+    background-color: white; /* Fondo blanco cuando se hace clic */
+    color: black; /* Texto negro cuando se hace clic */
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    transform: translateY(5px);  /* Reducir la transformación de clic */
+    transition: 100ms;
+}
+
+
+
+
+  
+
+/* Ajustes para los elementos dentro del contenedor de botones */
+.top-links nav ul .f1-tv,
+.top-links nav ul .sign-in,
+.top-links nav ul .subscribe {
+    margin-left: auto; /* Empuja los botones hacia la derecha */
+    display: flex; /* Para que los botones se alineen en fila */
+    gap: 5px; /* Añade espacio entre los botones */
+}
+
+/* Ajuste para el tamaño de las imágenes de F1 TV */
+.f1-tv img {
+    width: 75px; /* Ajusta el tamaño de la imagen de F1 TV */
+    height: auto;
+    margin: 1px 0;
+}
+
+
+/* Barra de navegación principal */
+.main-nav {
+    background-color: #ff0000;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid #cc0000;
+}
+
+.main-nav .logo-f1 {
+    display: flex;
+    align-items: center;
+    margin-right: 1cm; /* Espacio de 1 cm entre la imagen y los botones */
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav li {
+    margin: 0; /* Elimina el margen horizontal para pegar los botones */
+}
+
+/* Estilos del botón */
+.main-nav button {
+    font-size: 1rem; /* Aumenta el tamaño de la fuente */
+    padding: 25px 10px; /* Aumenta el padding para hacer el botón más grande */
+    border: 1px solid #ff0000;
+    color: #ffffff;
+    background: #ff0000;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 1;
+    transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+    box-sizing: border-box;
+}
+
+.main-nav button span:first-child {
+    position: relative;
+    transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+    z-index: 10;
+}
+
+.main-nav button span:last-child {
+    color: white;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+    z-index: 100;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translateY(225%) translateX(-50%);
+    height: 14px;
+    line-height: 13px;
+}
+
+.main-nav button:after {
+    content: "";
+    position: absolute;
+    bottom: -50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1d1d1f;
+    transform-origin: bottom center;
+    transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+    transform: skewY(9.3deg) scaleY(0);
+    z-index: 50;
+}
+
+.main-nav button:hover:after {
+    transform-origin: bottom center;
+    transform: skewY(9.3deg) scaleY(2);
+}
+
+.main-nav button:hover span:last-child {
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 1;
+    transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+}
+
+/* Dropdown styles */
+.main-nav .dropdown {
+    position: relative;
+}
+
+.main-nav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ff0000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.main-nav .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.main-nav .dropdown-content button {
+    width: 100%;
+    text-align: left;
+    border: none;
+    background: none;
+    font-size: 1rem;
+    padding: 10px 18px;
+    font-weight: normal;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.main-nav .dropdown-content button:hover {
+    background-color: #ff0000;
+    color: #333;
+}
+
+.main-nav .dropdown button:focus,
+.main-nav .dropdown-content button:focus {
+    outline: 2px solid #ff0000;
+}
+
+/* Contenedor de la sección */
+.header-section {
+    margin-left: 0;
+    margin: 0;
+}
+
+
+
+/* Estilo del título principal */
+.title {
+    font-family: 'Impact', sans-serif; /* Fuente gruesa por defecto */
+    font-size: 5rem;
+    color: #222;
+    margin: 10px;
+    text-align: left;
+    margin-left: 0.6cm;
+    letter-spacing: 2px; /* Compacta las letras */
+    line-height: 0.9;
+    margin-top: 2cm;
+}
+
+/* Estilo del subtítulo */
+.subtitle {
+    font-size: 1.1rem; /* Corregido: sin espacio */
+    color: #333;
+    margin-top: 10px;
+    max-width: 80%; /* Asegura que el texto quede dentro del mismo margen */
+    line-height: 1.5;
+    margin-left: 0.6cm;
+    text-align: justify; /* Justificación para alinear líneas */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%; /* Ajusta al 100% del ancho disponible */
+    max-width: 1280px; /* Ancho máximo del carrusel */
+    aspect-ratio: 16 / 9; /* Mantén siempre 16:9 */
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex; /* Habilita el alineamiento de contenido */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+.carousel-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: calc(100% * 7); /* Espacio para las 7 imágenes */
+    height: 100%; /* Ocupa todo el contenedor */
+    animation: slide 42s infinite ease-in-out; /* Ciclo automático (7 imágenes x 3 segundos) */
+}
+
+.carousel-slide {
+    flex: 0 0 100%; /* Cada imagen ocupa el 100% del carrusel */
+    display: flex;
+    flex-direction: column; /* Apila la imagen y la barra */
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.carousel-slide img {
+    max-width: 100%; /* Ajusta el ancho de la imagen sin deformarla */
+    max-height: 100%; /* Ajusta el alto de la imagen sin deformarla */
+    object-fit: contain; /* Asegura que se vea toda la imagen */
+    display: block;
+    margin: auto; /* Asegura el centrado adicional si es necesario */
+    border-radius: 10px;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0%); }
+    13.04% { transform: translateX(0%); } /* Mantén la primera imagen 5 segundos */
+    14.29% { transform: translateX(-100%); } /* Transición a la segunda imagen */
+    27.33% { transform: translateX(-100%); } /* Mantén la segunda imagen 5 segundos */
+    28.57% { transform: translateX(-200%); } /* Transición a la tercera imagen */
+    41.61% { transform: translateX(-200%); } /* Mantén la tercera imagen 5 segundos */
+    42.86% { transform: translateX(-300%); } /* Transición a la cuarta imagen */
+    55.90% { transform: translateX(-300%); } /* Mantén la cuarta imagen 5 segundos */
+    57.14% { transform: translateX(-400%); } /* Transición a la quinta imagen */
+    70.18% { transform: translateX(-400%); } /* Mantén la quinta imagen 5 segundos */
+    71.43% { transform: translateX(-500%); } /* Transición a la sexta imagen */
+    84.47% { transform: translateX(-500%); } /* Mantén la sexta imagen 5 segundos */
+    85.71% { transform: translateX(-600%); } /* Transición a la séptima imagen */
+    98.75% { transform: translateX(-600%); } /* Mantén la séptima imagen 5 segundos */
+    100% { transform: translateX(0%); } /* Vuelve a la primera imagen */
+}
+
+
+/* Barra de progreso */
+.carousel-progress-bar {
+    position: absolute;
+    bottom: 0; /* Barra en la parte inferior de cada imagen */
+    left: 0;
+    height: 5px; /* Altura de la barra */
+    width: 0%; /* Ancho inicial */
+    background-color: red; /* Color de la barra */
+    animation: individual-progress 42s infinite; /* Duración total del ciclo de 7 imágenes */
+    border-radius: 5px; /* Bordes redondeados opcionales */
+    animation-timing-function: linear; /* Progreso constante */
+}
+
+@keyframes individual-progress {
+    0% { width: 0%; } /* Barra vacía para la primera imagen */
+    13.04% { width: 100%; } /* Barra completa para la primera imagen */
+    14.29% { width: 0%; } /* Reinicia para la segunda imagen */
+    27.33% { width: 100%; } /* Barra completa para la segunda imagen */
+    28.57% { width: 0%; } /* Reinicia para la tercera imagen */
+    41.61% { width: 100%; } /* Barra completa para la tercera imagen */
+    42.86% { width: 0%; } /* Reinicia para la cuarta imagen */
+    55.90% { width: 100%; } /* Barra completa para la cuarta imagen */
+    57.14% { width: 0%; } /* Reinicia para la quinta imagen */
+    70.18% { width: 100%; } /* Barra completa para la quinta imagen */
+    71.43% { width: 0%; } /* Reinicia para la sexta imagen */
+    84.47% { width: 100%; } /* Barra completa para la sexta imagen */
+    85.71% { width: 0%; } /* Reinicia para la séptima imagen */
+    98.75% { width: 100%; } /* Barra completa para la séptima imagen */
+    100% { width: 0%; } /* Reinicio del ciclo */
+}
+
+/* Estilo para el texto debajo de la imagen */
+.f1-text {
+    font-size: 0.8rem; /* Tamaño pequeño */
+    color: #333; /* Color del texto */
+    text-align: left; /* Alineación a la izquierda */
+    margin-left: 0.6cm; /* Espaciado a la izquierda */
+    margin-top: 10px; /* Espaciado superior */
+}
+
+/* Estilos generales de la sección */
+.drivers-section {
+    display: flex;
+    justify-content: space-between;  /* Distribuye las cartas horizontalmente */
+    gap: 5px;  /* Espacio entre las cartas */
+    padding: 20px;
+    flex-wrap: wrap;  /* Permite que las cartas se ajusten en nuevas filas si es necesario */
+    width: 100%;  /* Asegura que ocupe todo el ancho disponible */
+    background-color: #e0e0e0;  /* Fondo gris claro para la sección de las cartas */
+    margin-bottom: 3cm;  /* Añadir espacio de 5 cm al final de la sección */
+}
+
+/* Añadir separación entre las filas */
+.drivers-section .driver-card:nth-child(n+4) {
+    margin-top: 25px;  /* Aumenta el margen superior de las cartas a partir de la 4ª */
+}
+
+/* Estilo para cada carta */
+.driver-card-link {
+    display: block;
+    text-decoration: none;  /* Elimina el subrayado del enlace */
+}
+
+/* Estilo de la carta individual */
+.driver-card {
+    background-color: #4d4949;  /* Blanco sucio (ligeramente gris) */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    width: 28%;  /* Cada carta ocupa un 28% del contenedor, asegurando 3 cartas por fila */
+    text-align: center;
+    padding: 15px;  /* Asegura que las cartas no sean demasiado grandes */
+    border: 2px solid #4d4949;
+    position: relative;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Transición para animación */
+    
+}
+
+/* Efectos de hover (aplicados al contenedor de la carta) */
+.driver-card:hover {
+    transform: rotateY(10deg) scale(1.05);  /* Rotación en el eje Y y ligero aumento */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);  /* Sombra más pronunciada */
+}
+
+/* Configuración de estilo para los elementos dentro de la tarjeta */
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #333;
+    margin: 0;
+}
+
+.driver-number {
+    font-size: 4rem;
+    color: #000000;
+    margin: 0;
+}
+
+.driver-points {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+.card-body {
+    margin: 0;
+}
+
+.driver-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+}
+
+.driver-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 10px;
+    color: #222;
+}
+
+.driver-flag {
+    width: 40px;
+    height: auto;
+    margin-left: auto;  /* Empuja la bandera hacia la derecha */
+    margin-right: 0;  /* Elimina cualquier margen a la derecha */
+}
+
+
+.card-footer {
+    margin: 0;
+    text-align: left;
+}
+
+.driver-team {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #555;
+    margin: 0;
+}
+
+.driver-img-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+}
+
+.driver-img {
+    width: 70%;
+    border-radius: 8px;
+    margin: 0;
+}
+
+.driver-number-small {
+    position: absolute;  /* Usamos posición absoluta para ubicarlo en la esquina */
+    bottom: 10px;        /* Se coloca 10px desde la parte inferior */
+    left: 10px;          /* Se coloca 10px desde el borde izquierdo */
+    width: 30%;          /* Mantiene el tamaño del número pequeño */
+    opacity: 0.8;        /* Mantiene la opacidad que ya tenía */
+}
+
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin: 15px 0;
+}
+
+/* Estilos generales de la sección */
+.drivers-section {
+    display: flex;
+    justify-content: space-between;  /* Distribuye las cartas horizontalmente */
+    gap: 5px;  /* Espacio entre las cartas */
+    padding: 20px;
+    flex-wrap: wrap;  /* Permite que las cartas se ajusten en nuevas filas si es necesario */
+    width: 100%;  /* Asegura que ocupe todo el ancho disponible */
+}
+
+/* Estilo para cada carta */
+.driver-card-link {
+    display: block;
+    text-decoration: none;  /* Elimina el subrayado del enlace */
+}
+
+/* Estilo de la carta individual */
+.driver-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    width: 33%;  /* Cada carta ocupa un 33% del contenedor, asegurando 3 cartas por fila */
+    text-align: center;
+    padding: 15px;  /* Asegura que las cartas no sean demasiado grandes */
+    border: 2px solid #f1f1f1;
+    position: relative;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Transición para animación */
+}
+
+/* Efectos de hover (aplicados al contenedor de la carta) */
+.driver-card:hover {
+    transform: rotateY(10deg) scale(1.05);  /* Rotación en el eje Y y ligero aumento */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);  /* Sombra más pronunciada */
+}
+
+/* Media query para pantallas más pequeñas (por ejemplo, dispositivos móviles) */
+@media (max-width: 768px) {
+    .driver-card {
+        width: 48%;  /* Las cartas ocupan un 48% del contenedor en pantallas más pequeñas (2 cartas por fila) */
+    }
+}
+
+@media (max-width: 480px) {
+    .driver-card {
+        width: 100%;  /* Las cartas ocupan el 100% del contenedor en pantallas muy pequeñas (1 carta por fila) */
+    }
+}
+
+
+
+.footer-background {
+    background-color: #000000;
+    height: 8cm;
+    width: 100%; /* Mantiene el 100% del ancho de su contenedor */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+
+
+/* Estilo para las imágenes */
+.image {
+    height: auto;  /* Mantiene la proporción de las imágenes */
+    width: 100%;  /* Ajusta el tamaño de las imágenes */
+}
+
+/* Eliminar contenedor adicional y usar gap para separación */
+.footer-background .image-container {
+    display: flex;
+    gap: 2cm;  /* Añade 4 cm de separación entre las imágenes */
+    justify-content: space-between;  /* Mantiene las imágenes separadas */
+}
+
+/* Efecto de hover: las imágenes se deslizan ligeramente hacia arriba y se oscurecen */
+.image:hover {
+    transform: translateY(-10px);  /* Desliza la imagen hacia arriba */
+    filter: brightness(0.6);  /* Reduce el brillo para oscurecerla ligeramente */
+}
+
+
+/* Footer */
+footer {
+    background-color: #1d1d1f;
+    color: white;
+    text-align: center;
+    padding: 8px 20px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    box-sizing: border-box;
+}
+
+.footer-top {
+    background-color: #333333; /* Color gris claro para la parte superior */
+    padding: 0;
+    width: 100%; /* Asegura que ocupe todo el ancho del contenedor */
+    position: absolute; /* Posiciona el footer-top dentro del contenedor */
+    top: 0; /* Puedes ajustar esto si necesitas que el fondo esté en la parte superior */
+    left: 0;
+    box-sizing: border-box;
+    z-index: 0; /* Envía el footer al fondo detrás de otros elementos */
+}
+
+
+
+/* Redes Sociales */
+.social-icons-container {
+    position: relative;  /* Asegura que se pueda mover */
+    top: 15%;  /* Ajusta este valor para mover la sección hacia abajo */
+    right: 0;  /* Alineación al borde derecho */
+    transform: translateY(0.3cm);  /* Ajusta el valor para mover hacia abajo */
+    display: flex;
+    justify-content: flex-start;  /* Alinea los íconos hacia la izquierda dentro del contenedor */
+    align-items: center;
+    padding: 10px;
+    z-index: 10;
+    flex-direction: row;  /* Coloca los íconos en fila */
+}
+
+/* Contenedor de los íconos */
+.wrapper {
+    display: inline-flex;  /* Coloca los íconos en fila */
+    list-style: none;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+}
+
+/* Estilo para los íconos */
+.wrapper .icon {
+    position: relative;
+    background: #fff;  /* Fondo blanco inicialmente */
+    border-radius: 50%;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    color: #000;  /* Los íconos de las redes sociales serán negros */
+}
+
+.wrapper .icon svg {
+    fill: #000;  /* Los íconos de las redes sociales estarán en negro */
+    transition: fill 0.3s;  /* Transición suave para el color de los íconos */
+}
+
+/* Cambio de color cuando se pasa el cursor */
+.wrapper .icon:hover {
+    background: #1877f2;  /* Fondo azul para Facebook */
+}
+
+.wrapper .facebook:hover svg {
+    fill: #fff;  /* Los íconos de Facebook se ponen blancos */
+}
+
+.wrapper .twitter:hover {
+    background: #1da1f2;  /* Fondo azul para Twitter */
+}
+
+.wrapper .twitter:hover svg {
+    fill: #fff;  /* Los íconos de Twitter se ponen blancos */
+}
+
+.wrapper .instagram:hover {
+    background: #e4405f;  /* Fondo rosa para Instagram */
+}
+
+.wrapper .instagram:hover svg {
+    fill: #fff;  /* Los íconos de Instagram se ponen blancos */
+}
+
+.wrapper .youtube:hover {
+    background: #ff0000;  /* Fondo rojo para YouTube */
+}
+
+.wrapper .youtube:hover svg {
+    fill: #fff;  /* Los íconos de YouTube se ponen blancos */
+}
+
+/* Estilo general para los tooltips */
+.wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    color: #fff; /* Color blanco para el texto */
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* Tooltip de Facebook */
+.wrapper .facebook .tooltip {
+    background: #1877f2; /* Fondo azul de Facebook */
+}
+
+/* Tooltip de Twitter */
+.wrapper .twitter .tooltip {
+    background: #1da1f2; /* Fondo azul de Twitter */
+}
+
+/* Tooltip de Instagram */
+.wrapper .instagram .tooltip {
+    background: #e4405f; /* Fondo rosado de Instagram */
+}
+
+/* Tooltip de YouTube */
+.wrapper .youtube .tooltip {
+    background: #ff0000; /* Fondo rojo de YouTube */
+}
+
+/* Tooltip cuando se pasa el cursor por encima */
+.wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.card-container-wrapper {
+    position: absolute;
+    transform: translateY(-0.2cm);  /* Ajusta el valor para mover hacia abajo */
+    top: 0px; /* Ajusta la distancia desde la parte superior de la página */
+    right: 0px; /* Ajusta la distancia desde el borde derecho de la página */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Alinea el contenido al borde derecho */
+    z-index: 1000; /* Envía el footer al fondo detrás de otros elementos */
+}
+
+.buttons-container {
+    display: flex;
+    gap: 10px;
+    z-index: 1000; /* Envía el footer al fondo detrás de otros elementos */
+}
+
+.card-container-wrapper p {
+    margin-top: 5px; /* Espacio pequeño entre los botones y el texto */
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+    text-align: right; /* Alinea el texto a la derecha */
+    z-index: 1000; /* Envía el footer al fondo detrás de otros elementos */
+}
+
+
+.buttons-container {
+    position: absolute;
+    top: 20px; /* Aumenta el margen superior */
+    right: 20px;
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+    pointer-events: auto;
+    z-index: 1000; /* Envía el footer al fondo detrás de otros elementos */
+}
+
+
+
+/* Botón general con ajustes de tamaño y forma */
+.download-button {
+    display: flex;
+    align-items: center;
+    border-radius: 14px; /* Bordes aún más redondeados */
+    padding: 10px 16px; /* Aumenta el padding para hacer el botón más grueso */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    justify-content: space-between;
+    min-width: 160px; /* Asegura un ancho mayor */
+    position: relative;
+    z-index: 1000; /* Elevar los botones al frente */
+    pointer-events: auto; /* Asegura que los clics sean reconocidos */
+    cursor: pointer; /* Asegura que el cursor cambie al pasar por encima */
+}
+
+
+
+
+
+/* Botón de Google Play */
+.download-button-google {
+    background-color: #488aec;
+    color: white;
+    box-shadow: 0 4px 6px -1px #488aec31, 0 2px 4px -1px #488aec17;
+    position: relative;
+    pointer-events: auto; /* Asegura que los clics sean reconocidos */
+    cursor: pointer;
+    z-index: 1000; /* Envía el footer al fondo detrás de otros elementos */
+}
+
+/* Botón de App Store */
+.download-button-apple {
+    background-color: #fff;
+    color: black;
+    box-shadow: 0 4px 6px -1px #0b162531, 0 2px 4px -1px #0e192b17;
+    position: relative;
+    z-index: 9999; /* Lleva el botón completamente al frente */
+    pointer-events: auto; /* Asegura que los clics sean reconocidos */
+    cursor: pointer;
+    z-index: 1000; /* Envía el footer al fondo detrás de otros elementos */
+}
+
+
+
+/* Efecto hover para ambos botones */
+.download-button:hover {
+    filter: brightness(0.9);
+    box-shadow: 0 6px 8px -1px rgba(0, 0, 0, 0.3), 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Envía el footer al fondo detrás de otros elementos */
+}
+
+/* Icono */
+.icon-image {
+    height: 20px;
+    width: 20px;
+    margin-right: 8px;
+    z-index: 1000; /* Envía el footer al fondo detrás de otros elementos */
+}
+
+/* Contenedor del texto en el botón */
+.button-text-container {
+    display: flex;
+    flex-direction: column;
+    z-index: 1000; /* Envía el footer al fondo detrás de otros elementos */
+}
+
+/* Estilo específico para "Get it on" en blanco */
+.google-play-subtext {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    z-index: 1000; /* Envía el footer al fondo detrás de otros elementos */
+}
+
+/* Estilo específico para "Download from" en negro */
+.app-store-subtext {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    z-index: 1000; /* Envía el footer al fondo detrás de otros elementos */
+}
+
+/* Texto principal de "Google Play" */
+.google-play-text {
+    color: #fff;
+    font-size: 16px;
+    z-index: 1000; /* Envía el footer al fondo detrás de otros elementos */
+}
+
+/* Texto principal de "App Store" */
+.app-store-text {
+    color: black;
+    font-size: 16px;
+    z-index: 1000; /* Envía el footer al fondo detrás de otros elementos */
+}
+
+.buttons-container {
+    display: flex;
+    gap: 10px;
+    z-index: 1000; /* Envía el footer al fondo detrás de otros elementos */
+}
+
+.card-container-wrapper p {
+    position: relative; /* Asegúrate de que el elemento pueda usar desplazamientos */
+    margin-top: 5px; /* Espacio pequeño entre los botones y el texto */
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+    top: calc(2.3cm); /* Baja el elemento 2.3 cm adicionales */
+    right: 0.7cm; /* Mueve el elemento 0.5 cm a la derecha */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Alinea el contenido al borde derecho */
+    z-index: 1000; /* Envía el footer al fondo detrás de otros elementos */
+}
+
+
+
+  
+/* Línea de separación */
+.footer-separator {
+    width: 100%;
+    height: 10px;
+    background-color: #555;
+    margin: 20px 0;
+}
+
+/* Línea de separación centrada */
+.footer-separator1 {
+    width: 70%;
+    height: 1px;
+    background-color: #555;
+    margin: 20px auto; /* Centra horizontalmente en la página */
+}
+
+
+/* Estilos de la sección de partners dentro del footer */
+.partners-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px; /* Espacio entre el logo y el botón */
+    padding: 10px 0;
+    font-family: 'Garamond', serif; /* Cambia a Garamond */
+    font-size: 1.2rem;
+    font-weight: 600; /* Ajusta el grosor según prefieras */
+    color: #ffffff; /* Color del texto */
+}
+
+
+/* Estilo para el logo de F1 */
+.f1-logo {
+    width: 60px; /* Ajusta el tamaño del logo */
+    height: auto;
+    margin-top: 3.5cm; /* Añade un margen superior de 3.5 cm para empujar hacia abajo */
+}
+
+/* Estilos del botón "Our partners" */
+.cta {
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    gap: 10px;
+    position: relative;
+    margin-top: 3.5cm; /* Desplaza el botón completo hacia abajo */
+}
+
+.cta .hover-underline-animation {
+    position: relative;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+
+
+.cta .hover-underline-animation::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: translateX(-100%);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: transform 0.3s ease;
+}
+
+.cta:hover .hover-underline-animation::after {
+    transform: translateX(0);
+}
+
+.cta svg {
+    transition: transform 0.3s ease;
+    fill: #ffffff;
+}
+
+.cta:hover svg {
+    transform: translateX(3px);
+    fill: #ff0000;
+}
+
+
+.partners-images {
+    display: flex;
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    gap: 10px; /* Espacio entre cada imagen */
+    padding: 0px 0; /* Espacio arriba y abajo */
+}
+
+.partners-images img {
+    width: 120px; /* Ajusta el ancho de las imágenes */
+    height: auto; /* Mantiene la proporción de las imágenes */
+}
+
+.marcas {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espacio entre cada imagen */
+    padding: 0px 0;
+}
+
+.marcas img {
+    width: 90px;
+    height: auto;
+}
+
+
+
+
+
+.footer-links {
+    display: flex; /* Cambia a flexbox para mejor control */
+    justify-content: center; /* Centra las columnas horizontalmente */
+    padding: 10px 0;
+    text-align: center;
+    max-width: 90%; /* Limita el ancho del contenedor para evitar que las columnas se expandan */
+    margin: 0 auto;
+}
+
+.footer-links .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 0; /* Ajusta el espaciado dentro de la columna */
+    margin: 0 5px; /* Espacio entre columnas usando margin */
+    width: 140px; /* Establece un ancho fijo para cada columna */
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-bottom: 8px; /* Ajusta el espacio entre enlaces */
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #fff;
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-thickness: 2px;
+}
+
+
+.footer-links h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 8px; /* Reduce el margen inferior */
+    text-transform: uppercase;
+    color: #ff0000;
+}
+
+.footer-links p {
+    font-size: 0.9rem;
+    color: #ddd;
+}
+
+.footer-links-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Aumenta el espacio entre los enlaces */
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-links-section a {
+    color: #ffffff; /* Mantiene el color blanco */
+    font-size: 0.8rem; /* Reduce el tamaño de la fuente */
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    transition: color 0.3s;
+    letter-spacing: 0.05em; /* Añade espacio entre letras */
+}
+
+.footer-links-section a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #ff0000; /* Color rojo para el subrayado */
+    left: 0;
+    bottom: -2px;
+    transition: width 0.3s ease;
+}
+
+.footer-links-section a:hover::after {
+    width: 100%; /* Expande el subrayado al 100% del ancho del texto */
+}
+
+.footer-end {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    border-top: 1px solid #555;
+    color: #ffffff;
+    font-size: 0.8rem;
+    position: relative; /* Permite centrar el botón dentro del contenedor */
+}
+
+.f1-logo-footer {
+    width: 80px;
+    height: auto;
+}
+
+.button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(20, 20, 20);
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 0px 4px rgb(53, 7, 7);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    position: absolute; /* Centra el botón dentro del footer */
+    left: 50%; /* Centra horizontalmente */
+    transform: translateX(-50%); /* Compensa el centrado */
+}
+
+.svgIcon {
+    width: 12px;
+    transition-duration: 0.3s;
+}
+
+.svgIcon path {
+    fill: white;
+}
+
+.button:hover {
+    width: 140px;
+    border-radius: 50px;
+    transition-duration: 0.3s;
+    background-color: rgb(255, 0, 0);
+    align-items: center;
+}
+
+.button:hover .svgIcon {
+    transition-duration: 0.3s;
+    transform: translateY(-200%);
+}
+
+.button::before {
+    position: absolute;
+    bottom: -20px;
+    content: "Back to Top";
+    color: white;
+    font-size: 0px;
+}
+
+.button:hover::before {
+    font-size: 13px;
+    opacity: 1;
+    bottom: unset;
+    transition-duration: 0.3s;
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+    .footer-links {
+        max-width: 90%; /* Ajustamos para pantallas más pequeñas */
+    }
+}
+
+
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+    footer {
+        padding: 8px 16px; /* Ajuste de padding en móviles para hacerlo más estrecho */
+    }
+
+    footer .social-links {
+        gap: 10px;
+    }
+
+    footer .social-icon {
+        width: 25px; /* Iconos más pequeños en móviles */
+        height: 25px;
+    }
+}
